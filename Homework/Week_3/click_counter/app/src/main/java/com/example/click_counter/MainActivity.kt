@@ -8,14 +8,14 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var countTextView: TextView
-    private var count = 0
+
+    var count = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        countTextView = findViewById(R.id.textView)
+        val countTextView: TextView = findViewById(R.id.textView)
         val incrementButton = findViewById<Button>(R.id.incrementButton)
         val resetButton = findViewById<Button>(R.id.resetButton)
         val decrementButton = findViewById<Button>(R.id.decrementButton)

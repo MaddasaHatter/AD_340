@@ -7,6 +7,10 @@ android {
     namespace 'com.example.bindingclickcounter'
     compileSdk 33
 
+    buildFeatures {
+        dataBinding true
+    }
+
     defaultConfig {
         applicationId "com.example.bindingclickcounter"
         minSdk 33
