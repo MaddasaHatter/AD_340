@@ -7,6 +7,10 @@ android {
     namespace 'com.example.bindingtoast'
     compileSdk 33
 
+    buildFeatures{
+        dataBinding true
+    }
+
     defaultConfig {
         applicationId "com.example.bindingtoast"
         minSdk 33
