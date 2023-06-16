@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">click behavior</string>
+    <string name="cat_select">Tap to meet the cats</string>
+    <string name="cat_splay">Tap to pet the cat </string>
+    <string name="cat_drink">Oh no! The cat spilled your coffee!</string>
+    <string name="cute_cat">Look how cute this cat is, tap to start over.</string>
+    <string name="purple_cat_description">Purple cat</string>
+    <string name="splayed_cat_description">Splayed cat</string>
+    <string name="cat_spill_description">Cat spill</string>
+    <string name="cute_cats_description">All cats</string>
+</resources>
