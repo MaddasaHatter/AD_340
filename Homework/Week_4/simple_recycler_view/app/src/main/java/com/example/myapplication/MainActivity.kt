@@ -17,11 +17,15 @@ class MainActivity : AppCompatActivity() {
         val rv: RecyclerView = findViewById(R.id.rv)
         rv.layoutManager = LinearLayoutManager(this)
 
-        rv.adapter = MyAdapter(IntRange(0, 100).toList())
+        val anime = listOf("Demon Slayer", "My Hero Academia", "Hellsing Ultimate",
+            "Full Metal Alchemist Brotherhood", "Dr Stone", "One Piece", "Black Clover", "Erased",
+            "Servamp", "Tonikawa:Over The Moon", "Mashle: Magc and Muscle", "Okami-san and her Seven Companions",
+            "Skip and Loafer", "Hell's Paradise", "Kaguya-sama: Love is war", "Sugar Apple Fairy tale", "BlackButler")
+        rv.adapter = MyAdapter(anime.toList())
     }
 }
 
-class MyAdapter(val data: List<Int>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(val data: List<String>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     class MyViewHolder(val row: View) : RecyclerView.ViewHolder(row) {
         val textView = row.findViewById<TextView>(R.id.number)
     }
